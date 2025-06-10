@@ -63,7 +63,11 @@ curl -H 'Accept: application/dns-json' -s 'https://doh.sb/dns-query?name=i18-nig
 
 ## 版本发布逻辑
 
-每个 `version` 都会发布到 `alpha` ，并记录在 `.dist/alpha.yml`
+每个 `version` 都会发布到 `alpha` ，并记录在 `ver`，格式为
+
+```
+0.1.3 日期 发布的版本
+```
 
 alpha 15天之后会自动变成 beta
 
