@@ -61,4 +61,27 @@ curl -H 'Accept: application/dns-json' -s 'https://doh.sb/dns-query?name=i18-nig
 
 `sign` 的签名算法为 `sha3-512` + `ed25519-ph` 。
 
+## 版本发布逻辑
+
+每个 `version` 都会发布到 `alpha` ，并记录在 `.dist/alpha.yml`
+
+alpha 15天之后会自动变成 beta
+
+beta 15天之后会自动变成 stable
+
+如果出现问题，把出问题的版本注释掉，就会忽略
+
+转变之前，会对比每个频道的最新版本号，如果小于这个最新版本号，就会忽略（比如`1.2.0`不会覆盖`2.0.0`）
+
+
+
+
+
+
+
+
+
+
+
+
 
