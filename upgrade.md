@@ -19,7 +19,7 @@ channel = xxx
 
 域名前缀为 项目名 `-` 版本号。
 
-比如 `i18-nightly.u-01.eu.org` 的 TXT 记录，格式为
+比如 `i18-stable.u-01.eu.org` 的 TXT 记录，格式为
 
 `版本号 网址1 网址2`
 
@@ -40,19 +40,19 @@ channel = xxx
 通过 `DOH` 解析域名的 `TXT` 记录 （类似下面）。
 
 ```
-curl -s 'https://doh.360.cn/resolve?name=i18-nightly.u-01.eu.org&type=TXT' | jq
+curl -s 'https://doh.360.cn/resolve?name=i18-stable.u-01.eu.org&type=TXT' | jq
 
-curl -s 'https://doh.pub/resolve?name=i18-nightly.u-01.eu.org&type=TXT' | jq
+curl -s 'https://doh.pub/resolve?name=i18-stable.u-01.eu.org&type=TXT' | jq
 
-curl -s 'https://dns.google/resolve?name=i18-nightly.u-01.eu.org&type=TXT' | jq
+curl -s 'https://dns.google/resolve?name=i18-stable.u-01.eu.org&type=TXT' | jq
 
-curl -s 'https://dns.alidns.com/resolve?name=i18-nightly.u-01.eu.org&type=TXT' | jq
+curl -s 'https://dns.alidns.com/resolve?name=i18-stable.u-01.eu.org&type=TXT' | jq
 
-curl -H 'Accept: application/dns-json' -s 'https://cloudflare-dns.com/dns-query?name=i18-nightly.u-01.eu.org&type=TXT' | jq
+curl -H 'Accept: application/dns-json' -s 'https://cloudflare-dns.com/dns-query?name=i18-stable.u-01.eu.org&type=TXT' | jq
 
-curl -H 'Accept: application/dns-json' -s 'https://doh.opendns.com/dns-query?name=i18-nightly.u-01.eu.org&type=TXT' | jq
+curl -H 'Accept: application/dns-json' -s 'https://doh.opendns.com/dns-query?name=i18-stable.u-01.eu.org&type=TXT' | jq
 
-curl -H 'Accept: application/dns-json' -s 'https://doh.sb/dns-query?name=i18-nightly.u-01.eu.org&type=TXT'  -L|jq
+curl -H 'Accept: application/dns-json' -s 'https://doh.sb/dns-query?name=i18-stable.u-01.eu.org&type=TXT'  -L|jq
 ```
 
 抽取返回响应`Answer`中`type`为`16`的值
@@ -63,7 +63,7 @@ curl -H 'Accept: application/dns-json' -s 'https://doh.sb/dns-query?name=i18-nig
 
 ## 版本发布逻辑
 
-每个 `version` 都会发布到 `alpha` ，并记录在 `ver`，格式为
+每个 `version` 都会发布到 `alpha` ，并记录在 `ver.yml`，格式为
 
 ```
 0.1.3 日期 发布的版本
@@ -78,13 +78,14 @@ beta 15天之后会自动变成 stable
 转变之前，会对比每个频道的最新版本号，如果小于这个最新版本号，就会忽略（比如`1.2.0`不会覆盖`2.0.0`）
 
 
+## CDN
 
+使用 wise 信用卡限额，避免费用超标
 
-
-
-
-
-
+* [阿里云国际版 边缘安全加速（原 DCDN）](https://www.alibabacloud.com/campaign/edge-security-acceleration-2025) 免费无限流量版
+* cloudflare
+* aws
+* gcore
 
 
 
