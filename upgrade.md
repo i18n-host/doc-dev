@@ -104,7 +104,7 @@ https://manage.fastly.com/configure
 
 修改 Origins -> Hosts -> 源站域名旁边的编辑图标，启用 IPV6，在 Settings 中启用 HTTP3
 
-修改 Settings → Create a cache setting
+修改 Settings → Create a cache setting ，缓存都改为 99999999 秒（大约3年）
 
 然后点击右上角的激活，选择 Production
 
