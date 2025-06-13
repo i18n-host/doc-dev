@@ -88,6 +88,9 @@ beta 15天之后会自动变成 stable
 3. [fastly](https://www.fastly.com/pricing) 每月额度50美元（约相当于 250 GB 的免费流量）
 4. [阿里云国际版 边缘安全加速 ESA](https://www.alibabacloud.com/campaign/edge-security-acceleration-2025) 免费无限流量版
 
+
+另外，如果流量量大，可以考虑 [advancedhosting](https://advancedhosting.com/pricing) ，1TB流量价格才3.80美元。
+
 ### cloudflare 配置
 
 创建一个 R2 的存储，然后绑定域名
