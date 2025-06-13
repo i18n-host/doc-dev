@@ -91,6 +91,8 @@ beta 15天之后会自动变成 stable
 
 另外，如果流量量大，可以考虑 [advancedhosting](https://advancedhosting.com/pricing) ，1TB流量价格才3.80美元。
 
+[cdnplanet](https://www.cdnplanet.com/cdns) 上面有 CDN 供应商的清单。
+
 ### cloudflare 配置
 
 创建一个 R2 的存储，然后绑定域名
