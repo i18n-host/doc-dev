@@ -96,6 +96,19 @@ beta 15天之后会自动变成 stable
 
 ### fastly 配置
 
-1. 创建域名证书
+1. 创建 CDN 服务
+
+https://manage.fastly.com/configure
+
+点击右上角的 `Edit Configure`
+
+修改 Origins -> Hosts -> 源站域名旁边的编辑图标，启用 IPV6，在 Settings 中启用 HTTP3
+
+然后点击右上角的激活，选择 Production
+
+2. 创建域名证书
 
 https://manage.fastly.com/network/domains
+
+
+
