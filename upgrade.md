@@ -100,7 +100,13 @@ beta 15天之后会自动变成 stable
 
 https://manage.fastly.com/configure
 
-点击右侧 `Edit configuration`
+2. 创建域名证书
+
+https://manage.fastly.com/network/domains
+
+3. 配置 CDN 服务
+
+[CDN页面](https://manage.fastly.com/configure)，点击域名后，点击右侧 `Edit configuration`
 
 修改 Origins -> Hosts -> 源站域名旁边的编辑图标，启用 IPV6，在 Settings 中启用 HTTP3
 
@@ -132,9 +138,6 @@ sub vcl_deliver {
 
 注意，删除请求头需要点击域名上面的 `Service summary`，再点击右上角的`Purge`的图标中清理缓存之后才能看到生效。
 
-2. 创建域名证书
-
-https://manage.fastly.com/network/domains
 
 
 
