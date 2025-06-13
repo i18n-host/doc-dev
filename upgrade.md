@@ -156,7 +156,7 @@ cdn缓存改为cdn受控，时间为 31536000 （单位是秒），浏览器缓�
 
 等首页“正在处理”完成之后
 
-启用 SSL
+启用 SSL → 获得免费的 Let's Encrypt 证书
 
-开启 将 HTTP 重定向到 HTTPS
+然后，开启 将 HTTP 重定向到 HTTPS
 
