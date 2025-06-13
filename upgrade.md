@@ -82,8 +82,8 @@ beta 15天之后会自动变成 stable
 
 使用 wise 信用卡限额，避免费用超标
 
-* [阿里云国际版 边缘安全加速（原 DCDN）](https://www.alibabacloud.com/campaign/edge-security-acceleration-2025) 免费无限流量版
 * cloudflare
+* [阿里云国际版 边缘安全加速（原 DCDN）](https://www.alibabacloud.com/campaign/edge-security-acceleration-2025) 免费无限流量版
 * [aws cloudfront](https://aws.amazon.com/cn/campaigns/cloudfront/) 每月免费1T
 * [gcore cdn](https://gcore.com/cdn) 每月免费1T
 
