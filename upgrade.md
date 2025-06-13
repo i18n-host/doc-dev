@@ -142,5 +142,4 @@ sub vcl_deliver {
 
 响应超时改为 60 秒
 
-然后请求证书，签名算法可以用 ECDSA P 256
-
+然后请求证书，签名算法可以用 ECDSA P 256，配置cloudflare的CNAME的时候，记得关闭代理。
