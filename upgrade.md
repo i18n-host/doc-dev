@@ -86,7 +86,7 @@ beta 15天之后会自动变成 stable
 1. [aws cloudfront](https://aws.amazon.com/cn/campaigns/cloudfront/) 每月免费1T
 2. [gcore cdn](https://gcore.com/cdn) 每月免费1T
 3. [fastly](https://www.fastly.com/pricing) 每月额度50美元（约相当于 250 GB 的免费流量）
-4. [阿里云国际版 边缘安全加速（原 DCDN）](https://www.alibabacloud.com/campaign/edge-security-acceleration-2025) 免费无限流量版
+4. [阿里云国际版 边缘安全加速 ESA](https://www.alibabacloud.com/campaign/edge-security-acceleration-2025) 免费无限流量版
 
 ### cloudflare 配置
 
