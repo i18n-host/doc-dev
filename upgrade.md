@@ -143,3 +143,7 @@ sub vcl_deliver {
 响应超时改为 60 秒
 
 然后请求证书，签名算法可以用 ECDSA P 256，配置cloudflare的CNAME的时候，记得关闭代理。
+
+### gcore cdn 配置
+
+配置完，访问首页，等待正在处理完成。
