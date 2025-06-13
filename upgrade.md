@@ -93,6 +93,8 @@ beta 15天之后会自动变成 stable
 
 [slashdot.org](https://slashdot.org/software/cdn/?sort=rating_count) 上面有 CDN 供应商的清单。
 
+[hostbrr](https://my.hostbrr.com/order/main/packages/storagebox) 存储可以买这个，500GB一年才7.77美元。
+
 ### cloudflare 配置
 
 创建一个 R2 的存储，然后绑定域名
