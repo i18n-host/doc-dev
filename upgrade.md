@@ -138,6 +138,9 @@ sub vcl_deliver {
 
 注意，删除请求头需要点击域名上面的 `Service summary`，再点击右上角的`Purge`的图标中清理缓存之后才能看到生效。
 
+### aws cloudfront 配置
 
+响应超时改为 60 秒
 
+然后请求证书，签名算法可以用 ECDSA P 256
 
