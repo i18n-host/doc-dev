@@ -110,7 +110,9 @@ https://manage.fastly.com/configure
 
 先添加 Show VCL ，然后上传 Custom VCL，然后激活
 
-注意，删除请求头需要再域名页右上角的`Purge`的图标中清理缓存之后才能看到生效。
+如果激活按钮不可以，刷新页面可以看到报错
+
+注意，删除请求头需要点击域名上面的 `Service summary`，再点击右上角的`Purge`的图标中清理缓存之后才能看到生效。
 
 2. 创建域名证书
 
