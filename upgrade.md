@@ -98,5 +98,4 @@ beta 15天之后会自动变成 stable
 
 1. 创建域名证书
 
-https://manage.fastly.com/network/dashboard
-
+https://manage.fastly.com/network/domains
