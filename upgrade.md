@@ -108,9 +108,27 @@ https://manage.fastly.com/configure
 
 然后点击右上角的激活，选择 Production
 
-先添加 Show VCL ，然后上传 Custom VCL，然后激活
+点击 Custom VCL ， 上传删除无用请求头的 vcl [rm_head.vcl](./fastly.rm_head.vcl)，内容如下
 
-如果激活按钮不可以，刷新页面可以看到报错
+```
+sub vcl_deliver {
+  #FASTLY deliver
+  unset resp.http.x-served-by;
+  unset resp.http.server;
+  unset resp.http.via;
+  unset resp.http.cf-cache-status;
+  unset resp.http.cf-ray;
+  unset resp.http.server-timing;
+  unset resp.http.fastly-debug-path;
+  unset resp.http.x-varnish;
+  unset resp.http.x-timer;
+  unset resp.http.x-cache-hits;
+  unset resp.http.x-cache;
+  return(deliver);
+}
+```
+
+然后激活。如果激活按钮不可以，刷新页面可以看到报错
 
 注意，删除请求头需要点击域名上面的 `Service summary`，再点击右上角的`Purge`的图标中清理缓存之后才能看到生效。
 
