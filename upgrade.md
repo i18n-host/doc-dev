@@ -91,7 +91,7 @@ beta 15天之后会自动变成 stable
 
 另外，如果流量量大，可以考虑 [advancedhosting](https://advancedhosting.com/pricing) ，1TB流量价格才3.80美元。
 
-[cdnplanet](https://www.cdnplanet.com/cdns) 上面有 CDN 供应商的清单。
+[slashdot.org](https://slashdot.org/software/cdn/?sort=rating_count) 上面有 CDN 供应商的清单。
 
 ### cloudflare 配置
 
