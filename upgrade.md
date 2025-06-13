@@ -108,6 +108,8 @@ https://manage.fastly.com/configure
 
 然后点击右上角的激活，选择 Production
 
+先添加 Show VCL ，然后上传 Custom VCL，然后激活
+
 2. 创建域名证书
 
 https://manage.fastly.com/network/domains
