@@ -156,10 +156,12 @@ cdn缓存改为cdn受控，时间为 31536000 （单位是秒），浏览器缓�
 
 启用 隐藏响应头 → 全部隐藏，除了 → 保留 content-encoding 、cache-control、 etag 即可
 
-等首页“正在处理”完成之后（10分钟）
+忽略 Set-Cookie
+
+然后，等首页“正在处理”完成之后（10分钟）
 
 启用 SSL → 获得免费的 Let's Encrypt 证书
 
-然后，开启 将 HTTP 重定向到 HTTPS
+开启 将 HTTP 重定向到 HTTPS
 
 
