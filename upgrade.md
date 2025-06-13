@@ -100,7 +100,7 @@ beta 15天之后会自动变成 stable
 
 https://manage.fastly.com/configure
 
-点击右上角的 `Edit Configure`
+点击右侧 `Edit configuration`
 
 修改 Origins -> Hosts -> 源站域名旁边的编辑图标，启用 IPV6，在 Settings 中启用 HTTP3
 
