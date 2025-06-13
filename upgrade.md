@@ -154,7 +154,7 @@ cdn缓存改为cdn受控，时间为 31536000 （单位是秒），浏览器缓�
 
 启用 大文件传递优化
 
-启用 隐藏响应头 → 全部隐藏，除了 → 保留 content-encoding 和 etag 即可
+启用 隐藏响应头 → 全部隐藏，除了 → 保留 content-encoding 、cache-control、 etag 即可
 
 等首页“正在处理”完成之后（10分钟）
 
