@@ -117,7 +117,7 @@ https://manage.fastly.com/network/domains
 
 修改 Origins -> Hosts -> 源站域名旁边的编辑图标，启用 IPV6，在 Settings 中启用 HTTP3
 
-修改 Settings → Create a cache setting ，缓存都改为 99999999 秒（大约3年），Action 选 Do nothing now
+
 
 然后点击右上角的激活，选择 Production
 
@@ -137,6 +137,26 @@ sub vcl_deliver {
   unset resp.http.x-timer;
   unset resp.http.x-cache-hits;
   unset resp.http.x-cache;
+  return(deliver);
+}
+```
+
+上传缓存 vcl [cache.vcl](./fastly.cache.vcl)，内容如下
+
+```vcl
+sub vcl_fetch {
+  #FASTLY fetch;
+
+  # 允许 Fastly 缓存非 200 的响应
+  set beresp.cacheable = true;
+
+  # 如果响应状态码是 200，缓存1年
+  if (beresp.status == 200) {
+    set beresp.ttl = 31536000s;
+  } else {
+    # 其他所有状态码的响应，缓存5分钟
+    set beresp.ttl = 300s;
+  }
   return(deliver);
 }
 ```
