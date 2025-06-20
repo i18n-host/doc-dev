@@ -2,9 +2,9 @@
 
 ## 客户端
 
-~/.config/xxx/update.yml
+~/.config/xx/update.yml
 
-channel = xxx
+channel = xx
 
 更新频道
 
@@ -35,7 +35,7 @@ channel = xxx
 
 `https://github.com/up51/v/releases/download/i18/0.2.1/aarch64-apple-darwin.tar`
 
-有比如 `up[0-2].xxx.com` 表示 `up0.xxx.com` 、`up1.xxx.com`、`up2.xxx.com` 这几个域名都可以下载。
+有比如 `up[0,2~4].xx.com` 表示 `up0.xx.com` 、`up2.xx.com` ，`up3.xx.com`, `up4.xx.com` 这几个域名都可以下载。
 
 通过 `DOH` 解析域名的 `TXT` 记录 （类似下面）。
 
