@@ -3,7 +3,8 @@
 ## 后端
 
 [翻译 GRPC 服务](https://github.com/i18n-in/tran_srv)
-[翻译后端用到的库](https://github.com/i18n-in/tran)
+[翻译后端用到的内部库](https://github.com/i18n-in/tran)
+[翻译后端用到的开源库](https://github.com/i18n-site/tran)
 
 ## 模板
 
